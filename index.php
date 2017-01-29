@@ -62,9 +62,9 @@ $Sizes=array(
       </p>
       <h4>Why Only 32 Bytes?</h4>
       <ul>
-          <li>-8 characters of base <span title="26 letters in each case, plus ten numerical digits.">62</span> contain 2.1e18 possible combinations requiring 69 years of guessing at 100k/second in order to bruteforce.</li>
-          <li>-16 characters contain 4.7e28 possible combinations requiring 1.5e16 years to bruteforce.</li>
-          <li>-32 characters contain 2.2e57 possible combinations requiring 7.2e44 years to bruteforce.<br>
+          <li>8 characters of base <span title="26 letters in each case, plus ten numerical digits.">62</span> contain 2.1e18 possible combinations requiring 69 years of guessing at 100k/second in order to bruteforce.</li>
+          <li>16 characters contain 4.7e28 possible combinations requiring 1.5e16 years to bruteforce.</li>
+          <li>32 characters contain 2.2e57 possible combinations requiring 7.2e44 years to bruteforce.<br>
             <i>This is about half of the remaining lifespan of the universe.</i>
           </li>
       </ul>
