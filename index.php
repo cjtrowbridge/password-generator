@@ -49,7 +49,7 @@ $Sizes=array(
     <a class="navbar-brand" href="https://password-generator.cjtrowbridge.com">Password Generator</a>
     <ul class="nav navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/cjtrowbridge/password-generator">Github</a>
+        <a class="nav-link" href="https://github.com/cjtrowbridge/password-generator" target="_blank">Github</a>
       </li>
     </ul>
   </nav>
