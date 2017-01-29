@@ -65,7 +65,9 @@ $Sizes=array(
 
   </div><!-- /.container -->
   <style>
-      
+    body {
+      padding-top: 5rem;
+    }
   </style>
   <script>
     function GetPassword(size){
