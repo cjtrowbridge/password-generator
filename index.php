@@ -75,6 +75,7 @@ $Sizes=array(
     function GetPassword(size){
       $.get('./?generate='+size, function(data){
         $("#bodyContainer").append('<div class="card"><div class="card-block"><h4 class="card-title">Generated '+size+' Byte Password</h4><div class="form-group"><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="'+data+'"></div></div></div>');
+        $("#bodyContainer .card:last-of-type").select();
       });
     }
   </script>
