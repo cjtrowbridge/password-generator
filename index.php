@@ -2,14 +2,27 @@
 
 if(isset($_REQUEST['generate'])){
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	$string = '';
-	
-	for ($i = 0; $i < intval($_REQUEST['generate']); $i++) {
-		$string .= $characters[mt_rand(0, strlen($characters) - 1)];
-	}
-	
-	die($string);
+  $string = '';
+
+  $Size=intval(intval($_REQUEST['generate']));
+  
+  //Limit size to 1024
+  if($Size>1024){$Size=1024;}
+  
+  for ($i = 0; $i < $Size; $i++) {
+    $string .= $characters[mt_rand(0, strlen($characters) - 1)];
+  }
+
+  die($string);
 }
+
+$Sizes=array(
+  8,
+  16,
+  32,
+  64,
+  128
+);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -38,11 +51,16 @@ if(isset($_REQUEST['generate'])){
 
   <div class="container" id="bodyContainer">
     Size: 
-    <button type="button" class="btn btn-secondary">8</button>
+    <?php foreach($Sizes as $Size){ ?>
+    <button type="button" class="btn btn-secondary" onclick="GetPassword(<?php echo $Size; ?>);"><?php echo $Size; ?></button>
+    <?php } ?>
 
   </div><!-- /.container -->
+  <style>
+      
+  </style>
   <script>
-    function MakePassword(size){
+    function GetPassword(size){
       $.get('./?generate='+size, function(data){
         $("#bodyContainer").append('<div class="card"><div class="card-block"><h4 class="card-title">Generated '+size+' Byte Password</h4><p class="card-text">'+data+'</p></div></div>');
       });
