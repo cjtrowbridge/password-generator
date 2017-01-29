@@ -58,10 +58,15 @@ $Sizes=array(
   </nav>
 
   <div class="container" id="bodyContainer">
-    Size: 
-    <?php foreach($Sizes as $Size){ ?>
-    <button type="button" class="btn btn-secondary" onclick="GetPassword(<?php echo $Size; ?>);"><?php echo $Size; ?></button>
-    <?php } ?>
+    <div class="col-xs=12=">
+      <p>
+        Size: 
+        <?php foreach($Sizes as $Size){ ?>
+        <button type="button" class="btn btn-secondary" onclick="GetPassword(<?php echo $Size; ?>);"><?php echo $Size; ?></button>
+        <?php } ?>
+      </p>
+    </div>
+    
 
   </div><!-- /.container -->
   <style>
