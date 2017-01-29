@@ -47,6 +47,14 @@ $Sizes=array(
 
   <nav class="navbar navbar-fixed-top navbar-dark bg-primary container">
     <a class="navbar-brand" href="https://password-generator.cjtrowbridge.com">Password Generator</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/cjtrowbridge/password-generator">Github</a>
+      </li>
+    </ul>
+  </div>
+    
   </nav>
 
   <div class="container" id="bodyContainer">
