@@ -6,9 +6,8 @@ My main frustration with password generators has been filtering out all the spec
 ###Entropy generated with this tool;  
 -8 characters contain 2.1e18 possible combinations requiring 69 years of guessing at 100k/second in order to bruteforce.  
 -16 characters contain 4.7e28 possible combinations requiring 1.5e16 years to bruteforce.  
--32 characters contain 2.2e57 possible combinations requiring 7.2e44 years to bruteforce. This is about half of the remaining lifespan of the universe before heat death occurs.  
+-32 characters contain 2.2e57 possible combinations requiring 7.2e44 years to bruteforce.  
   
-*I typically use 32 characters for my passwords.*
-  
+*This is about half of the remaining lifespan of the universe.*  
   
 Navigate to [https://password-generator.cjtrowbridge.com/](https://password-generator.cjtrowbridge.com/) and select a size. It's as easy as that! :]
